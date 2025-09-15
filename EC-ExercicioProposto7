@@ -1,0 +1,57 @@
+package estrutura_condicional;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class exercicioProposto7 {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		double X, Y;
+		
+		X = sc.nextDouble();
+		Y = sc.nextDouble();
+		
+		if (X == 0.0 && Y == 0.0){
+        //if = se
+        //se x for igual a 0 e y tambem o resultado abaixo sera impresso
+			System.out.println("Origem");
+		}
+		else if (X == 0.0) {
+        //else if = ou se
+        //se x for igual a 0 o resultado abaixo sera impresso
+			System.out.println("Eixo Y");
+		}
+		else if (Y == 0.0) {
+        //else if = ou se
+        //se y for igual a 0 o resultado abaixo sera impresso
+			System.out.println("Eixo X");
+		}
+		else if (X > 0.0 && Y > 0.0) {
+        //else if = ou se
+        //se x for maior que 0 e y tambem o resultado abaixo sera impresso
+			System.out.println("Q1");
+		}
+		else if (X < 0.0 && Y > 0.0) {
+        //else if = ou se
+        //se x for menor que 0 e y for maior que 0 o resultado abaixo sera impresso
+			System.out.println("Q2");
+		}
+		else if (X < 0.0 && Y < 0.0) {
+        //else if = ou se
+        //se x for menor que 0 e y tambem o resultado abaixo sera impresso
+			System.out.println("Q3");
+		}
+		else {
+        //else = ou 
+        //se x for maior que 0 e y for menor que 0 o resultado abaixo sera impresso
+			System.out.println("Q4");
+		}
+		
+		sc.close();
+	}
+
+}
