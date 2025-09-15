@@ -1,0 +1,49 @@
+package estrutura_condicional;
+
+import java.util.Scanner;
+
+public class exercicioProposto5 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int codigo, quantidade;
+		
+		codigo = sc.nextInt();
+		quantidade = sc.nextInt();
+
+		double total;
+
+		if (codigo == 1) {
+        //if = se
+        //se codigo for igual 1 o multiplicador sera este abaixo
+			total = quantidade * 4.0;
+		}
+		else if (codigo == 2) {
+        //else if = ou se
+        //se codigo for igual 2 o multiplicador sera este abaixo
+			total = quantidade * 4.5;
+		}
+		else if (codigo == 3) {
+        //else if = ou se
+        //se codigo for igual 3 o multiplicador sera este abaixo
+			total = quantidade * 5.0;
+		}
+		else if (codigo == 4) {
+        //else if = ou se
+        //se codigo for igual 5 o multiplicador sera este abaixo
+			total = quantidade * 2.0;
+		}
+		else {
+        //else = ou
+        //se codigo for qualquer outro valor que fuja dos prescritos o multiplicador sera este abaixo
+			total = quantidade * 1.5;
+		}
+		
+		System.out.printf("Total: R$ %.2f%n", total);
+		
+		sc.close();
+	}
+
+}
