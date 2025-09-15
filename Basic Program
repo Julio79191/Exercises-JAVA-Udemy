@@ -1,0 +1,40 @@
+import java.util.Locale;
+
+public class programaBasico {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US); 
+        //configura a localização do programa.
+		
+		int y = 32; 
+        //int = numero inteiro.
+		double x = 10.35784; 
+        //double = numero com casa decimal.
+		System.out.print("Ele disse que ia ganhar..."); 
+        //imprime a frase descrita entre parenteses e aspas sem quebra de linha.
+		System.out.println("ele prometeu!!!"); 
+        //...ln = imprime a frase descrita entre parenteses e aspas com quebra de linha.
+		System.out.println(y); 
+        //imprime o valor referente a y.
+		System.out.printf("%.1f",x); 
+        //imprime o valor referente a x com apenas uma casa decimal. 
+		System.out.println();
+		System.out.println("resultado="+ x + " metros");
+        //imprime o primeiro parenteses + o valor atribuido a x + segundo parenteses.              
+		System.out.printf("resultado= %.1f metros", x);
+        //imprime o primeiro parenteses + o valor atribuido a x com apenas uma casa decimal + segundo parenteses.
+		System.out.println();
+		String nome = "Maria";
+        //string = sequencia de caracteres.
+		int idade = 31;
+		double renda = 4000.0;
+		
+		System.out.println("teste maria");
+		System.out.println();
+		System.out.printf("%s tem %d e ganha R$ %.2f reais", nome, idade, renda);
+        //%s = imprime a string que for descrita, no caso nome.
+        //%d = imprime a int que for descrita, no caso idade.
+        //%.2f = imprime a double que for descrita, no caso renda com duas casas decimais.		
+	}
+}
