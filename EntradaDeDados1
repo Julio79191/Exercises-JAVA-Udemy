@@ -1,0 +1,32 @@
+package curso_programacao;
+
+import java.util.Scanner;
+
+public class entradaDeDados {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String x;
+        //define x como string e deixa seu valor em aberto.
+		int y;
+        //define y como int e deixa seu valor em aberto.
+		double z;
+        //define z como double e deixa seu valor em aberto.
+		x = sc.next();
+        //campo para que o usuario descreva o valor que será atribuido a string x.
+		y = sc.nextInt();
+        //campo para que o usuario descreva o valor que será atribuido ao int y.
+		z = sc.nextDouble();
+        //campo para que o usuario descreva o valor que será atribuido ao double z.
+		System.out.println("Valores digitados: ");
+		System.out.println(x);
+		System.out.println(y);
+		System.out.println(z);
+		
+		sc.close();
+
+	}
+
+}
