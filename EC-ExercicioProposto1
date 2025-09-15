@@ -1,0 +1,25 @@
+package estrutura_condicional;
+
+import java.util.Scanner;
+
+public class exercicioProposto1 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		int x;
+		x = sc.nextInt();
+
+		if (x < 0) {
+			System.out.println("NEGATIVO");
+          //caso valor atribuido a x for menor que 0 este texto será impresso.
+		} else {
+          //else = ou.
+			System.out.println("NAO NEGATIVO");
+          //caso valor atribuido a x for maior que 0 este texto será impresso.
+		}
+		sc.close();
+	}
+
+}
