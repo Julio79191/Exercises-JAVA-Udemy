@@ -1,0 +1,27 @@
+package estrutura_repetitiva;
+
+import java.util.Scanner;
+
+public class exemploWhile {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int x = sc.nextInt();
+		    //define x como int que tera seu valor atribuido pelo usuario
+		int soma = 0;
+        //define soma como int que tem valor = 0
+		while (x != 0) {
+        //while = enquanto
+        //enquanto valor de x for diferente de 0 a conta prossegue
+			soma += x;
+        //assim que o valor do x for igual ao da soma o a conta sera finalizada e seu resultado sera impresso 
+			x = sc.nextInt();
+		}		
+		
+		System.out.println(soma);
+		sc.close();
+	}
+
+}
