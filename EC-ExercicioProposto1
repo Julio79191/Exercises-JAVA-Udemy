@@ -12,6 +12,7 @@ public class exercicioProposto1 {
 		x = sc.nextInt();
 
 		if (x < 0) {
+		  //if = se
 			System.out.println("NEGATIVO");
           //caso valor atribuido a x for menor que 0 este texto será impresso.
 		} else {
