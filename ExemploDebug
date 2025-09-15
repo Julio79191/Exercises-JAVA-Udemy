@@ -1,0 +1,32 @@
+package estrutura_repetitiva;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class exemploDebug {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+        //define a localização
+		Scanner sc = new Scanner(System.in);
+
+		double largura = sc.nextDouble();
+        //define largura como um double que terá seu valor atribuido pelo usuario
+		double comprimento = sc.nextDouble();
+        //define comprimento como um double que terá seu valor atribuido pelo usuario
+		double metroQuadrado = sc.nextDouble();
+        //define metroQuadrado como um double que terá seu valor atribuido pelo usuario
+
+		double area = largura * comprimento;
+        //valor da largura * comprimento = area
+		double preco = area * metroQuadrado;
+        //recebe o valor da area * metroQuadrado, resultando no preco
+		System.out.printf("AREA = %.2f%n", area);
+        //imprime a area com duas casas decimais
+		System.out.printf("PRECO = %.2f%n", preco);
+        //imprime o preco com duas casas decimais
+		sc.close();
+	}
+
+}
