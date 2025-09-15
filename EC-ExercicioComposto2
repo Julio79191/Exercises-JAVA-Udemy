@@ -1,0 +1,28 @@
+package estrutura_condicional;
+
+import java.util.Scanner;
+
+public class exercicioProposto2 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int x;
+		
+		x = sc.nextInt();
+		
+		if (x % 2 == 0) {
+        //if = se
+			System.out.println("PAR");
+        //se x for divisivel por 2 este resultado será impresso.
+		}
+		else {
+        //else = ou.
+			System.out.println("IMPAR");
+        //se x não for divisivel por 2 este resultado será impresso.
+		}
+		sc.close();
+	}
+
+}
