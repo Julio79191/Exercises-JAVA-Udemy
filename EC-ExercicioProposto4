@@ -1,0 +1,31 @@
+package estrutura_condicional;
+
+import java.util.Scanner;
+
+public class exercicioProposto4 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int X, Y, Z;
+		
+		X = sc.nextInt();
+		Y = sc.nextInt();
+		
+		if (X < Y) {
+        //if = se
+        //se o valor de Y for menor que o valor de Y
+			Z = Y - X;
+		}
+		else {
+        //else = ou
+        //se o valor de Y for maior que o valor de Y
+			Z = 24 - X + Y;
+		}
+		System.out.println("O JOGO DUROU " + Z + "HORA(S)");
+		
+		sc.close();
+	}
+
+}
