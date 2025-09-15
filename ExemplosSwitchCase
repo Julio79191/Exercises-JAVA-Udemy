@@ -1,0 +1,59 @@
+package estrutura_condicional;
+
+import java.util.Scanner;
+
+public class exemploSwitchCase {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		int x = sc.nextInt();
+        //define x como int que sera definida pelo usuario.
+		String dia;
+        //define dia como string que sera definida pelo valor inserido no x.
+
+		switch (x) {
+		case 1:
+			dia = "domingo";
+			break;
+        //case = caso.
+        //caso x = 1 o dia sera definido como domimgo.
+		case 2:
+			dia = "segunda";
+			break;
+        //caso x = 2 o dia sera definido como segunda.
+		case 3:
+			dia = "terça";
+			break;
+        //caso x = 3 o dia sera definido como terça.
+		case 4:
+			dia = "quarta";
+			break;
+        //caso x = 4 o dia sera definido como quarta.
+		case 5:
+			dia = "quinta";
+			break;
+        //caso x = 5 o dia sera definido como quinta.
+		case 6:
+			dia = "sexta";
+			break;
+        //caso x = 6 o dia sera definido como sexta.
+		case 7:
+			dia = "sábado";
+			break;
+        //caso x = 7 o dia sera definido como sabado.
+		default:
+			dia = "Valor invalido";
+			break;
+        //default = não definido, padrão.
+        //caso valor inserido no x fuja dos casos definidos acima, 
+        //o default será utilizado e seu dia sera impresso como valor invalido.
+		}
+		System.out.println("Dia da semana: " + dia);
+		    //imprime o primeiro aspas + o dia que foi definido pelo x.
+
+		sc.close();
+	}
+
+}
