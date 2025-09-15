@@ -1,0 +1,24 @@
+package estrutura_repetitiva;
+
+import java.util.Scanner;
+
+public class exercicioWhile1 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		int senha = sc.nextInt();
+        //define senha como int que tera seu valor atribuido pelo usuario
+		while (senha != 2002) {
+        //while = enquanto
+        //enquanto senha for diferente de 2002 o resultado abaixo é impresso e o programa continua em seu ciclo
+			System.out.println("Senha Invalida");
+			senha = sc.nextInt();
+		}
+		System.out.println("Acesso Permitido");
+        //caso a senha correta seja inserida o resultado acima será impresso e o programa se encerra
+		sc.close();
+	}
+
+}
