@@ -1,0 +1,29 @@
+package estrutura_condicional;
+
+import java.util.Scanner;
+
+public class exercicioProposto3 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int X, Y;
+		
+		X = sc.nextInt();
+		Y = sc.nextInt();
+		
+		if (X % Y == 0 || Y % X == 0 ) {
+        //if = se
+			System.out.println("Sao Multiplos");
+        //se o valor de x dividido pelo valor de y for == 0, este valor será impresso
+		} 
+		else {
+        //else = ou
+			System.out.println("Nao Sao Multiplos");
+        //se o valor de x dividido pelo valor de y for != 0, este valor será impresso
+		}
+		sc.close();
+	}
+
+}
