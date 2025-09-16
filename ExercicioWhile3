@@ -1,0 +1,46 @@
+package estrutura_repetitiva;
+
+import java.util.Scanner;
+
+public class exercicioWhile3 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		int alcool = 0;
+		int gasolina = 0;
+		int diesel = 0;
+		    //define alcool, gasolina e diesel como int de valor 0
+		int tipo = sc.nextInt();
+        //define tipo como int cujo valor sera atribuido pelo usuario
+		while (tipo != 4) {
+        //enquanto tipo for diferente de 4 o programa prosseguira
+			if (tipo == 1) {
+				//if = se
+        //se o numero 1 for inserido, sera incluso mais um alcool ao final do programa
+        alcool += 1;
+			}
+			else if (tipo == 2) {
+        //else if = ou se
+        //se o numero 2 for inserido, sera incluso mais uma gasolina ao final do programa
+				gasolina += 1;				
+			}
+			else if (tipo == 3) {
+        //else if = ou se
+        //se o numero 3 for inserido, sera incluso mais um diesel ao final do programa
+				diesel += 1;				
+			}			
+			  //caso numero 4 for iserido o programa encerrara
+			tipo = sc.nextInt();
+		}
+		
+		System.out.println("MUITO OBRIGADO");
+		System.out.println("Alcool: " + alcool);
+		System.out.println("Gasolina: " + gasolina);
+		System.out.println("Diesel: " + diesel);
+        //ao final do programa esse texto sera impresso com os valores que foram adicionados durante o programa
+		sc.close();
+	}
+
+}
