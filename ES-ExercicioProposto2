@@ -1,0 +1,25 @@
+package estrutura_sequencial;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class exercicioProposto2 {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+        //define o local que a pontuação seguira
+		Scanner sc = new Scanner(System.in);
+
+		double pi = 3.14159;
+		    //define o valor do double pi como 3.14159
+		double R = sc.nextDouble();
+		    //define R como double cujo valor sera definido pelo usuario
+		double A = pi * R * R;
+		    //define A como double cujo valor sera a multiplicação = pi * R * R
+		System.out.printf("A=%.4f%n", A);
+		    //imprime o valor de A com 4 casas decimais
+		sc.close();
+	}
+
+}
