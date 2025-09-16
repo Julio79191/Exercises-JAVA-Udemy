@@ -1,0 +1,21 @@
+package estrutura_sequencial;
+
+import java.util.Scanner;
+
+public class exercicioProposto1 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int x = sc.nextInt();
+		int y = sc.nextInt();
+		    //define x e y como int cujo valores que serao atribuidos pelo usuario
+		int SOMA = x + y;
+		    //realiza a soma dos valores x + y
+		System.out.println("SOMA = " + SOMA);
+        //imprime o valor da soma de x + y
+		sc.close();
+	}
+
+}
