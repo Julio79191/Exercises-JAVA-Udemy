@@ -1,0 +1,22 @@
+package estrutura_repetitiva;
+
+public class testeDeMesa1 {
+
+	public static void main(String[] args) {
+		
+		int x = 0;
+		int y = 4;
+		    //define x e y como int com valores de 0 e 4 respectivamente
+		while (x<3) {
+        //while = enquanto
+        //enquanto x for menor que 3 o programa continuara
+			y += 2;
+        //adiciona mais 2 ao valor de y
+			x += 1;
+        //adiciona mais 1 ao valor de x
+			System.out.println(x +"-"+ y);
+        //imprime os valores de x e y respectivamente até que x se iguale a 3
+		} 
+	}
+
+}
