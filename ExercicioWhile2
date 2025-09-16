@@ -1,0 +1,45 @@
+package estrutura_repetitiva;
+
+import java.util.Scanner;
+
+public class exercicioWhile2 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		int x, y;
+		x = sc.nextInt();
+		y = sc.nextInt();
+        //valores x e y defidos como int com valores a serem inseridos pelos usuarios
+
+		while (x != 0 && y != 0) {
+        //while = enquanto
+        //enquanto x se y forem diferentes de 0 o programa continuara
+			if (x > 0 && y > 0) {
+        //if = se
+        //se x e y forem maiores que 0 o valor abaixo sera impresso
+				System.out.println("primeiro");
+			} else if (x < 0 && y > 0) {
+        //else if = ou se
+        //se x for menor que 0 e y for maior o valor abaixo sera impresso
+				System.out.println("segundo");
+			} else if (x < 0 && y < 0) {
+        //else if = ou se
+        //se x e y forem menores que 0 o valor abaixo sera impresso
+				System.out.println("terceiro");
+			} else {
+        //else = ou
+        //se x for maior que 0 e y for menor o valor abaixo sera impresso
+				System.out.println("quarto");
+			}
+        //caso ambos valores forem igual a 0 o programa se encerrara
+			x = sc.nextInt();
+			y = sc.nextInt();
+
+		}
+
+		sc.close();
+	}
+
+}
