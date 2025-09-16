@@ -1,0 +1,51 @@
+package estrutura_sequencial;
+
+import java.util.Locale;
+
+public class exercicioFixacao1 {
+
+	public static void main(String[] args) {
+		
+		//%s 	representa Strings
+		//%d	representa números inteiros
+		//%f	representa números floats
+		//%2f	representa números doubles
+		//%b	representa valores booleanos
+		//%c	representa valores char
+		
+		String product1 = "Computer";
+		String product2 = "Office Desk";
+		
+		int age = 30;  
+        //atribui valor 30 ao int definido como age
+		int code = 5290;
+        //atribui valor 5290 ao int definido como code
+		char gender = 'F';
+		    //atribui o valor F ao char definido como gender
+
+		double price1 = 2100.0;
+        //atribui valor 2100.0 ao double definido como price1
+		double price2 = 650.50;
+        //atribui valor 650.0 ao double definido como price2
+		double measure = 53.234567;
+        //atribui valor 53.234567 ao double definido como measure
+		
+		System.out.println("Products:");
+		System.out.printf("%s, which price is R$ %.2f", product1, price1);
+		System.out.println();
+		System.out.printf("%s, which price is R$ %.2f", product2, price2);
+		System.out.println();
+		System.out.println();
+		System.out.printf("Record: %d years old, code %d and gender: %c", age, code, gender);
+		System.out.println();
+		System.out.println();
+		System.out.printf("Measure with eight decimal places: %.8f", measure);
+		System.out.println();
+		System.out.printf("Rounded (three decimal places): %.3f", measure);
+		System.out.println();
+		Locale.setDefault(Locale.US);
+        //define a localizacao a partir dessa parte do programa, alterando a pontuacao
+		System.out.printf("US decimal point: %.3f", measure);
+		
+	}
+}
