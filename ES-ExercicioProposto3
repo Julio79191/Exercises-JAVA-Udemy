@@ -1,0 +1,30 @@
+package estrutura_sequencial;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class exercicioProposto3 {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int A, B, C, D, DIFERENCA;
+		    //define A,B,C,D e DIFERENCA como int
+		A = sc.nextInt(); 
+        //usuario insere valor de A
+		B = sc.nextInt();
+        //usuario insere valor de B
+		C = sc.nextInt();
+        //usuario insere valor de C
+		D = sc.nextInt();
+        //usuario insere valor de D
+		DIFERENCA = A * B - C * D;
+        //a diferenca de A * B - C * D é impressa ao final 
+		System.out.println("DIFERENÇA = " + DIFERENCA );
+		sc.close();
+	}
+
+}
